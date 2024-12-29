@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+    
+    <p id="demo"></p>
+    <script>
+        // create an object
+        var person = { firstName: "I", age: 15, name: "Sohaib", };
+        //Display some data from the object
+        document.getElementById("demo").innerHTML = person.firstName + " am " + person.age + " years old";
+    </script>
+    <p id="niazi"></p>
+    <p id="why"></p>
+    <script>
+        document.getElementById("niazi").innerHTML = Math.round(2.29);
+
+        document.getElementById("why").innerHTML = Math.random();
+    </script>
+    
+    <p id="result"></p>
+    <script>
+        function findMax() {
+            var max = 0;
+            for (i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max) {
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = findMax(120, 15, 92.99, 1, 6);
+    </script>
+
+
+
+
+
+</body>
+
+</html>
